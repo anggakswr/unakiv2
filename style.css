@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -154,50 +155,144 @@ input[name="r"] {
   border-bottom: 5px solid darkslategrey;
 }
 
+/* Content */
+.content {
+  width: 700px;
+  box-sizing: border-box;
+  float: right;
+}
+
+.post {
+  padding-bottom: 20px;
+}
+
+.post h2 {
+  color: darkorange;
+}
+
+.post img {
+  width: 200px;
+  float: left;
+  margin: 10px;
+}
+
 .ditulis {
   font-size: 15px;
   margin-top: -15px;
-}
-
-.ditulis a {
-  text-decoration: none;
 }
 
 .main p {
   padding-top: 15px;
 }
 
-/* Content */
-.content {
-  width: 600px;
-  box-sizing: border-box;
-  float: right;
-}
-
 /* Sidebar */
 .sidebar {
-  width: 300px;
+  width: 200px;
   float: left;
 }
 
-.sidebar img {
-  width: 100px;
+.kotakh3 {
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  color: white;
+}
+
+.kotakh3 h3 {
+  margin: 10px;
+}
+
+.kotakh3 img {
   float: left;
-  margin-top: 19px;
+  margin: 4px 10px;
+}
+
+.sidebar label {
+  display: block;
+  margin: 5px;
+}
+
+.sidebar input {
+  width: 182px;
+}
+
+.sidebar button {
+  margin: 10px;
+}
+.sidebar li {
+  list-style-type: none;
+}
+
+.sidebar a, .baca {
+  display: block;
+  text-decoration: none;
+  background-color: darkslategrey;
+  color: white;
+  padding: 0 10px;
+  line-height: 30px;
+  transition: .5s;
+}
+
+.sidebar a:hover, .baca:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+.baca {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Footer Info */
+.footerinfo {
+  background-color: lightgrey;
+}
+
+.footerkiri {
+  width: 460px;
+  float: left;
+  padding: 10px;
+}
+
+.footerkiri img {
+  float: left;
   margin-right: 10px;
 }
 
-.sidebar p {
-  font-size: 15px;
+.footerkiri h2 {
+  color: darkslategrey;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footerkiri p {
+  padding: 3px;
+}
+
+.footerkanan {
+  width: 460px;
+  float: right;
+  padding: 10px;
+}
+
+.footerkanan h3 {
+  margin: 10px 0;
+  color: darkslategrey;
+}
+
+.footerkanan p {
+  margin-bottom: 20px;
 }
 
 /* Footer */
-footer p {
+footer {
   background-color: #333;
   color: lightgrey;
   padding: 20px;
+}
+
+footer p {
   text-align: center;
 }
+
 
 /* Micro Clearfix */
 .cf:before,

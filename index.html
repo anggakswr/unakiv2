@@ -33,10 +33,10 @@
       <!-- Images -->
       <div class="slider">
         <div class="slides">
-          <input type="radio" name="r" id="r1" checked>
-          <input type="radio" name="r" id="r2">
-          <input type="radio" name="r" id="r3">
-          <input type="radio" name="r" id="r4">
+          <input type="radio" name="r" id="r1" class="rad">
+          <input type="radio" name="r" id="r2" class="rad">
+          <input type="radio" name="r" id="r3" class="rad">
+          <input type="radio" name="r" id="r4" class="rad">
           <div class="slide s1">
             <img src="img/slide/1.jpg" alt="Belajar untuk masa depan.">
           </div>
@@ -63,32 +63,101 @@
       <div class="main cf">
         <!-- Sidebar -->
         <div class="sidebar">
-          <h3>Tentang Penulis</h3>
-          <img src="angga.png" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="kotakh3 cf">
+            <img src="img/login.png" alt="Login mahasiswa">
+            <h3>User Login</h3>
+          </div>
+          <form action="" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Masukkan username">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Masukkan password">
+            <button type="submit">Login</button>
+          </form>
+          <div class="kotakh3 cf">
+            <img src="img/mhs.png" alt="Daftar jurusan">
+            <h3>Info Kampus</h3>
+            <ul>
+              <li><a href="#">&raquo; Fakultas</a></li>
+              <li><a href="#">&raquo; Prodi / Jurusan</a></li>
+              <li><a href="#">&raquo; Ekstrakulikuler</a></li>
+              <li><a href="#">&raquo; Organisasi Kampus</a></li>
+              <li><a href="#">&raquo; Kompetisi</a></li>
+              <li><a href="#">&raquo; Beasiswa</a></li>
+              <li><a href="#">&raquo; Study Tour</a></li>
+              <li><a href="#">&raquo; Mission Trip</a></li>
+              <li><a href="#">&raquo; IT Club</a></li>
+            </ul>
+          </div>
         </div>
         <!-- Sidebar End -->
 
         <!-- Content -->
         <div class="content">
-          <h2>Judul Artikel</h2>
-          <p class="ditulis">ditulis oleh <a href="#">Universitas Aki</a> pada 8 April 2020.</p>
+          <div class="post cf">
+            <a href="#">
+              <h2>Hari Raya Isa Almasih</h2>
+              <img src="img/post/post1.png" alt="Universitas Aki Memperingati">
+            </a>
+            <p class="ditulis">ditulis oleh <a href="#">Universitas Aki</a> pada 15 April 2020.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="baca">Baca selanjutnya &raquo;</a>
+          </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="post cf">
+            <a href="#">
+              <h2>Raih Beasiswa 100%</h2>
+              <img src="img/post/post2.png" alt="Bebas Uang Kuliah">
+            </a>
+            <p class="ditulis">ditulis oleh <a href="#">Universitas Aki</a> pada 12 April 2020.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="baca">Baca selanjutnya &raquo;</a>
+          </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="post cf">
+            <a href="#">
+              <h2>Menyambut Mahasiswa Baru</h2>
+              <img src="img/post/post3.png" alt="Masa Orientasi Calon Mahasiswa">
+            </a>
+            <p class="ditulis">ditulis oleh <a href="#">Universitas Aki</a> pada 8 April 2020.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="baca">Baca selanjutnya &raquo;</a>
+          </div>
         </div>
         <!-- Content End -->
       </div>
 
+      <!-- Footer Info -->
+      <div class="footerinfo cf">
+        <div class="footerkiri">
+          <img src="img/unakiv2logo.png" alt="Universitas Akreditasi B Semarang">
+          <h2>Universitas Aki</h2>
+          <p><b>Alamat :</b> Jl. Imam Bonjol 15, 16, 17, Semarang</p>
+          <p><b>Telepon :</b> 024-3552-555</p>
+          <p><b>Whatsapp :</b> 0818-290-000</p>
+          <p><b>Email :</b> pmb@unaki.ac.id</p>
+        </div>
+        <div class="footerkanan">
+          <h3>Sosial Media</h3>
+          <p>Silahkan follow berbagai akun sosial media Universitas Aki untuk mengetahui informasi terbaru seputar Universitas Aki.</p>
+          <a href="#"><img src="img/sosmed/fb.png" alt="Facebook Unaki"></a>
+          <a href="#"><img src="img/sosmed/twit.png" alt="Twitter Unaki"></a>
+          <a href="#"><img src="img/sosmed/ig.png" alt="Instagram Unaki"></a>
+        </div>
+      </div>
+      <!-- Footer Info End -->
+
+      <div class="cf">
+        <!-- div kosong hanya utk cleaf float -->
+      </div>
+
       <!-- Footer -->
-      <footer>
+      <footer class>
         <p>&copy; Copyright 2020. Universitas Aki. All rights reserved.</p>
       </footer>
       <!-- Footer End -->
     </div>
     <!-- Container End -->
+    <script src="script.js"></script>
   </body>
 </html>
