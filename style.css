@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to top, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+}
+
+/* Simple */
+h1 {
+  color: darkslategrey;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  color: white;
+  background: darkslategrey;
+  padding: 9px;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+button:hover {
+  /* color: black; */
+  background-color: darkcyan;
+}
+
+/* Container */
+.container {
+  width: 960px;
+  margin: auto;
+  background-color: white;
+  color: grey;
+  font-family: arial, sans-serif;
+}
+
+/* Header */
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header li {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: darkslategrey;
+  padding: 5px;
+}
+
+.header a:hover {
+  background-color: darkslategrey;
+  color: white;
+  transition: .5s;
+  border-bottom: 5px solid darkcyan;
+}
+
+/* Image */
+.img {
+  height: 200px;
+  background-image: url(img.jpg);
+  background-position: center;
+  border-top: 5px solid darkslategrey;
+  border-bottom: 5px solid salmon;
+}
+
+/* Slider */
+.slider {
+  width: 960px;
+  height: 200px;
+  overflow: hidden;
+  border-top: 5px solid darkslategrey;
+  border-bottom: 5px solid darkorange;
+}
+
+.slidenav {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.bar:hover {
+  background-color: #fff;
+}
+
+input[name="r"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 40%;
+  transition: .5s;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -34%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -120%;
+}
+
+/* Main */
+.main {
+  padding: 20px;
+  border-bottom: 5px solid darkslategrey;
+}
+
+.ditulis {
+  font-size: 15px;
+  margin-top: -15px;
+}
+
+.ditulis a {
+  text-decoration: none;
+}
+
+.main p {
+  padding-top: 15px;
+}
+
+/* Content */
+.content {
+  width: 600px;
+  box-sizing: border-box;
+  float: right;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  float: left;
+}
+
+.sidebar img {
+  width: 100px;
+  float: left;
+  margin-top: 19px;
+  margin-right: 10px;
+}
+
+.sidebar p {
+  font-size: 15px;
+}
+
+/* Footer */
+footer p {
+  background-color: #333;
+  color: lightgrey;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
